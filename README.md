@@ -35,3 +35,7 @@ fn main() {
 ## Contributions
 Contributions ar very welcome, as I will probably not get around to completing all audio file formats.
 Optimizations to code are also very welcome.
+
+
+## Other info
+This is a continuation of [Jonas' Utils](https://github.com/Jomy10/jonas-utils). Specifically, the [audio utils](https://github.com/Jomy10/jonas-utils/tree/master/src/main/java/be/jonaseveraert/util/audio).
