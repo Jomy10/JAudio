@@ -1,9 +1,15 @@
 [package]
 name = "jaudio"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "A low-level interface for working with audio files"
 license = "MIT OR Apache-2.0"
+authors = ["Jonas Everaert <jonas.vbs4@gmail.com>"]
+readme = "README.md"
+homepage = "https://jonaseveraert.be"
+repository = "https://github.com/Jomy10/JAudio"
+keywords = ["audio", "wave", "wave", "pcm"]
+categories = ["multimedia", "multimedia::audio", "multimedia::encoding"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
