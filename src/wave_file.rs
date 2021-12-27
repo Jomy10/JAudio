@@ -10,7 +10,7 @@ pub enum AudioFormat {
 impl AudioFormat {
     fn get_val(&self) -> u32 {
         match self {
-            PCM => 1
+            AudioFormat::PCM => 1
         }
     }
 }

@@ -1,7 +1,7 @@
-#![doc(html_logo_url = "path_to_logo", html_favicon_url = "path_to_favicon")]
+// #![doc(html_logo_url = "path_to_logo", html_favicon_url = "path_to_favicon")]
 #![deny(missing_docs)]
 
-//! A low-level package for working with audio files
+//! A low-level interface for working with audio files
 //!
 //! Currently implemented:
 //! - [Wave Files](wave_file/WaveFile)
