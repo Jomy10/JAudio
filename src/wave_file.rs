@@ -151,14 +151,14 @@ impl WaveFile {
         let subchunk1_id = subchunk1_id.as_bytes();
         let subchunk1_size = subchunk1_size.to_le_bytes(); // this has 4 bytes
         let mut i = 0;
-        let audio_format: [u8; 2] = self.audio_format.to_le_bytes().into_iter().filter(|v| {
+        let audio_format: [u8; 2] = self.audio_format.to_le_bytes().into_iter().filter(|_| {
             if i < 2 { i += 1; true } else { false }
         }).collect::<Vec<u8>>()
             .as_slice()
             .try_into()
             .unwrap(); // this has 2
         let mut i = 0;
-        let num_channels: [u8; 2] = self.num_channels.to_le_bytes().into_iter().filter(|v| {
+        let num_channels: [u8; 2] = self.num_channels.to_le_bytes().into_iter().filter(|_| {
             if i < 2 { i += 1; true } else { false }
         })
             .collect::<Vec<u8>>()
@@ -168,7 +168,7 @@ impl WaveFile {
         let sample_rate = self.sample_rate.to_le_bytes();
         let byte_rate = self.byte_rate.to_le_bytes();
         let mut i = 0;
-        let block_align: [u8; 2] = self.block_align.to_le_bytes().into_iter().filter(|v| {
+        let block_align: [u8; 2] = self.block_align.to_le_bytes().into_iter().filter(|_| {
             if i < 2 { i += 1; true } else { false }
         })
             .collect::<Vec<u8>>()
@@ -176,7 +176,7 @@ impl WaveFile {
             .try_into()
             .unwrap();
         let mut i = 0;
-        let bits_per_sample: [u8; 2] = self.bits_per_sample.to_le_bytes().into_iter().filter(|v| {
+        let bits_per_sample: [u8; 2] = self.bits_per_sample.to_le_bytes().into_iter().filter(|_| {
             if i < 2 { i += 1; true } else { false }
         })
             .collect::<Vec<u8>>()
