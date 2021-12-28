@@ -11,7 +11,7 @@ JAudio = "0.1.1"
 ### Wave files
 Currently, only wave files are implemented.
 
-The following example read bytes from a file, then inserts these bytes in a `WaveFile` struct and finally saves the file
+The following example reads bytes from a file, then inserts these bytes in a `WaveFile` struct and finally saves the file
 again.
 ```rust
 use jaudio::wave_file::*;
