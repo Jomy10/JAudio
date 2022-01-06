@@ -2,6 +2,8 @@
 
 A low-level interface for working with audio files.
 
+Note that this is a 0.x release and a currently only wave files are supported. in the future there will be support for other audioformats as well as converting fiels within the same format.
+
 ## Usage
 Add the following to your `Cargo.toml` file:
 ```toml
